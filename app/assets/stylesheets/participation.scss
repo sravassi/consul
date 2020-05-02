@@ -738,6 +738,14 @@
 
   .panel {
     @extend %panel;
+
+    .button {
+      margin-right: $line-height / 2;
+
+      ~ .button {
+        margin-right: $line-height / 2;
+      }
+    }
   }
 
   .debate-content,
