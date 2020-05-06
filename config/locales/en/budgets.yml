@@ -123,6 +123,13 @@ en:
           by_feasibility: By feasibility
           feasible: Feasible projects
           unfeasible: Unfeasible projects
+        filter: "Filtering projects by"
+        filters:
+          not_unfeasible: "Not unfeasible"
+          selected: "Selected"
+          unfeasible: "Unfeasible"
+          unselected: "Unselected"
+          winners: "Winners"
         orders:
           random: random
           confidence_score: highest rated
