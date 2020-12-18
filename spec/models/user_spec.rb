@@ -721,4 +721,14 @@ describe User do
       expect(User.find_by_manager_login("admin_user_#{user.id}")).to eq user
     end
   end
+
+  describe "#add_unsubscribe_hash" do
+    let(:user) { build(:user, unsubscribe_hash: nil) }
+
+    it "generate unsubscribe_hash for user before create" do
+      user.save
+
+      expect(user.unsubscribe_hash).to be_present
+    end
+  end
 end
