@@ -187,7 +187,7 @@ describe "Emails" do
       expect(email).not_to have_body_text(debate_path(Comment.first.commentable))
       expect(email).to have_body_text(comment_path(Comment.last))
       expect(email).to have_body_text("To stop receiving these emails change your settings in")
-      expect(email).to have_body_text(account_path)
+      expect(email).to have_body_text(edit_unsubscribe_path(user.unsubscribe_hash))
     end
 
     scenario "Do not send email about own replies to own comments", :js do
@@ -459,7 +459,7 @@ describe "Emails" do
       expect(email).not_to have_body_text(poll_path(poll))
       expect(email).to have_body_text(comment_path(Comment.last))
       expect(email).to have_body_text("To stop receiving these emails change your settings in")
-      expect(email).to have_body_text(account_path)
+      expect(email).to have_body_text(edit_unsubscribe_path(user1.unsubscribe_hash))
     end
   end
 
