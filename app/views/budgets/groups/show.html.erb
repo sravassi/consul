@@ -54,7 +54,7 @@
       <div class="small-12 column">
         <small>
           <%= link_to t("budgets.groups.show.unfeasible"),
-                      budget_path(@budget, filter: "unfeasible") %>
+                      budget_group_path(@budget, @group, filter: "unfeasible") %>
         </small>
       </div>
     </div>
@@ -65,7 +65,7 @@
       <div class="small-12 column">
         <small>
           <%= link_to t("budgets.groups.show.unselected"),
-                      budget_path(@budget, filter: "unselected") %>
+                      budget_group_path(@budget, @group, filter: "unselected") %>
         </small>
       </div>
     </div>
