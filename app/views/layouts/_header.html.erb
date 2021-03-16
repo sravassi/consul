@@ -14,15 +14,14 @@
 
   <div class="row">
     <div class="top-bar">
+     <span> APARECE </span> 
       <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="float-right">
         <span class="menu-icon dark" data-toggle></span>
         <%= t("application.menu") %>
       </span>
 
       <h1 class="top-bar-title">
-	<span> Capistrano </span>
         <%= link_to root_path, accesskey: "0" do %>
-
           <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: setting["org_name"]) %>
         <% end %>
       </h1>
